@@ -1,0 +1,1376 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3257108100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to related page and clicks sign in button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.go_to_related_page_and_clicks_sign_in_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4708629200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user enters valis user name \"username\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_enters_valis_user_name_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 689711100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user navigates back",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_navigates_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1782571900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user clicks more services button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.theUserClicksMoreServicesButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2967449000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks Account Summary link",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.theUserClicksAccountSummaryLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2973689400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user clicks Account Activity tab",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccoutActivity_StepDefs.theUserClicksAccountActivityTab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-09T05:31:59.928Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8672817500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.setUps()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Account Activity Verifications",
+        "description": "",
+        "id": "account-activity;account-activity-verifications",
+        "after": [
+          {
+            "result": {
+              "duration": 5950049800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 718888400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The page title should be \"Zero - Account Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.thePageTitleShouldBe(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 682766300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The account menu\u0027s default choice should be \"Savings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.AccoutActivity_StepDefs.theAccountMenuSDefaultChoiceShouldBe(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 400704700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The account menu\u0027s selections should be below list",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccoutActivity_StepDefs.theAccountMenuSSelectionsShouldBeBelowList(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Savings"
+                ]
+              },
+              {
+                "cells": [
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Loan"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit Card"
+                ]
+              },
+              {
+                "cells": [
+                  "Brokerage"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38817200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The transactions table\u0027s heahs should be visible",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccoutActivity_StepDefs.theTransactionsTableSHeahsShouldBeVisible()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Account Activity",
+    "description": "",
+    "id": "account-activity",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/accountActivity.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2782139400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to related page and clicks sign in button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.go_to_related_page_and_clicks_sign_in_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5434237500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user enters valis user name \"username\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_enters_valis_user_name_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 847772700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user navigates back",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_navigates_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1723053900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user clicks more services button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.theUserClicksMoreServicesButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3471116700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks Account Summary link",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.theUserClicksAccountSummaryLink()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-09T05:31:59.927Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8332634500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.setUps()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Account summary title and page subtitles assertion",
+        "description": "",
+        "id": "account-summary-page-tests;account-summary-title-and-page-subtitles-assertion",
+        "after": [
+          {
+            "result": {
+              "duration": 7987193800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 387052800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The page title should be \"Zero - Account Summary\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Summary\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.thePageTitleShouldBe(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 652568100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The actual page subtitles should be equal below list",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.theActualPageSubtitlesShouldBeEqualBelowList(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Cash Accounts"
+                ]
+              },
+              {
+                "cells": [
+                  "Investment Accounts"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit Accounts"
+                ]
+              },
+              {
+                "cells": [
+                  "Loan Accounts"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1236538600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The Credits Accounts subheads should be visible",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.theCreditsAccountsSubheadsShouldBeVisible()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Account Summary Page Tests",
+    "description": "",
+    "id": "account-summary-page-tests",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/accountSummary.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2921166000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Go to related page and clicks sign in button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.go_to_related_page_and_clicks_sign_in_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5348543000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user enters valis user name \"username\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_enters_valis_user_name_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 638188000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user navigates back",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_navigates_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1927825200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks more services button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.theUserClicksMoreServicesButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2536747500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user clicks Account Summary link",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.theUserClicksAccountSummaryLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3291183900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks Pay Bills tab",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserClicksPayBillsTab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-09T05:31:59.924Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8110091100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.setUps()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Pay Bill Page Missing Data Tests",
+        "description": "",
+        "id": "pay-bills;pay-bill-page-missing-data-tests;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 6851969000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1119141600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "The user fills the form with missing data \"Bank of America\" \"Savings\" \"\" \"01012022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bank of America\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Savings\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"01012022\"",
+                  "offset": 73
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserFillsTheFormWithMissingData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101347300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The user should be able to see warning message \"Lütfen bu alanı doldurun.\" \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lütfen bu alanı doldurun.\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"true\"",
+                  "offset": 75
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserShouldBeAbleToSeeWarningMessage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2044843100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Go to related page and clicks sign in button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.go_to_related_page_and_clicks_sign_in_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2744368100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user enters valis user name \"username\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_enters_valis_user_name_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 534091000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user navigates back",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_navigates_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 915803400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks more services button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.theUserClicksMoreServicesButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 249755500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user clicks Account Summary link",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.theUserClicksAccountSummaryLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1219132400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks Pay Bills tab",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserClicksPayBillsTab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-09T05:32:32.940Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2578523500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.setUps()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Pay Bill Page Missing Data Tests",
+        "description": "",
+        "id": "pay-bills;pay-bill-page-missing-data-tests;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 846555900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 465523500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "The user fills the form with missing data \"Apple\" \"Loan\" \"10000\" \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Loan\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"10000\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 65
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserFillsTheFormWithMissingData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30772800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The user should be able to see warning message \"Lütfen bu alanı doldurun.\" \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lütfen bu alanı doldurun.\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 75
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserShouldBeAbleToSeeWarningMessage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1881750700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Go to related page and clicks sign in button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.go_to_related_page_and_clicks_sign_in_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1789811600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user enters valis user name \"username\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_enters_valis_user_name_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 439701900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user navigates back",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_navigates_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 768913100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks more services button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.theUserClicksMoreServicesButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 268390100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user clicks Account Summary link",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.theUserClicksAccountSummaryLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200833900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks Pay Bills tab",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserClicksPayBillsTab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-09T05:32:44.577Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1673983300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.setUps()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Pay Bill Page Charachter variations Tests",
+        "description": "",
+        "id": "pay-bills;pay-bill-page-charachter-variations-tests;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 745235800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 821475700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The user fills the form with invalid data \"Bank of America\" \"Savings\" \"abc\" \"01012022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bank of America\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Savings\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"abc\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"01012022\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserFillsTheFormWithInvalidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34310000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The user should not be able to see success message \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserShouldNotBeAbleToSeeSuccessMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "The user should be able to see warning message \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserShouldBeAbleToSeeWarningMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1586782200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Go to related page and clicks sign in button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.go_to_related_page_and_clicks_sign_in_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1816808700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user enters valis user name \"username\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_enters_valis_user_name_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 458185700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user navigates back",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_navigates_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 673135600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks more services button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.theUserClicksMoreServicesButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 317181500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user clicks Account Summary link",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.theUserClicksAccountSummaryLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1385570500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks Pay Bills tab",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserClicksPayBillsTab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-09T05:32:54.209Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1708504300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.setUps()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Pay Bill Page Charachter variations Tests",
+        "description": "",
+        "id": "pay-bills;pay-bill-page-charachter-variations-tests;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 777438200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 781702200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The user fills the form with invalid data \"Bank of America\" \"Savings\" \"\\]*\" \"01012022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bank of America\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Savings\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"\\]*\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"01012022\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserFillsTheFormWithInvalidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28760900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The user should not be able to see success message \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserShouldNotBeAbleToSeeSuccessMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "The user should be able to see warning message \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserShouldBeAbleToSeeWarningMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1700323700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Go to related page and clicks sign in button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.go_to_related_page_and_clicks_sign_in_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1877396900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user enters valis user name \"username\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_enters_valis_user_name_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 474668100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user navigates back",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.the_user_navigates_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 761540000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks more services button",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.LodinStepDefs.theUserClicksMoreServicesButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 291099800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user clicks Account Summary link",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.AccountSummaryStepDefs.theUserClicksAccountSummaryLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1254239300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks Pay Bills tab",
+            "match": {
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserClicksPayBillsTab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-09T05:33:03.749Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1495562600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.setUps()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Pay Bill Page Charachter variations Tests",
+        "description": "",
+        "id": "pay-bills;pay-bill-page-charachter-variations-tests;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 715397300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 443435700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The user fills the form with invalid data \"Bank of America\" \"Savings\" \"123\" \"abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bank of America\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Savings\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"abc\"",
+                  "offset": 76
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserFillsTheFormWithInvalidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The user should not be able to see success message \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"false\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserShouldNotBeAbleToSeeSuccessMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33841600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "The user should be able to see warning message \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"false\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.zerobank.stepDefinitions.PayBillsStepDefs.theUserShouldBeAbleToSeeWarningMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Pay Bills",
+    "description": "",
+    "id": "pay-bills",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/payBills.feature",
+    "tags": []
+  }
+]
